@@ -1,5 +1,4 @@
 package com.company;
-
 import ibcsutils.Book;
 
 public class Main {
@@ -14,11 +13,25 @@ public class Main {
            value is 2,147,483,647 (while int only occupies 32 bits of memory,
            long occupies 64 bits of memory
         5. methods are member functions and fields are member variables
-        */
+
         // Exercise 2
-        Book fantasy = new Book("title", new String[] {"Lastname", "Firstname"}, 2006);
+        Book fantasy = new Book("title", new String [] {"Lastname", "Firstname"}, 2006);
         System.out.println (fantasy);
-        Book trueCrime = new Book("another title", new String[] {"lastName", "firstName"}, 1987);
+        Book trueCrime = new Book("another title", new String [] {"lastName", "firstName"}, 1987);
         System.out.println (trueCrime);
+
+        // Exercise 3
+
+        Newspaper theGuardian = new Newspaper ("The Guardian", 2021, 3, 12, true);
+            System.out.println (theGuardian);
+
+        // Exercise 4
+
+        Course GlobalPolitics = new Course ("International law", "Global Politics", "Huxley", -7, false);
+        System.out.println (GlobalPolitics);
+        */
+        // Exercise 5
+
+
     }
 }
