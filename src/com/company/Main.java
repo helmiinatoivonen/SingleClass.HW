@@ -32,6 +32,7 @@ public class Main {
         */
         // Exercise 5
 
-
+        Point one = new Point (new int[] {1, 0}, new int[] {1, 0}); // coordinates of point one and also some other point
+        System.out.println (one);
     }
 }
