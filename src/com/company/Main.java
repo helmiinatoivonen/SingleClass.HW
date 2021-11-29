@@ -29,6 +29,7 @@ public class Main {
 
         Course GlobalPolitics = new Course ("International law", "Global Politics", "Huxley", -7, false);
         System.out.println (GlobalPolitics);
+
         */
         // Exercise 5
 

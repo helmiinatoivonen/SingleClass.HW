@@ -46,7 +46,9 @@ public class Point
             unitCircle = false;
 
         // method to determine the midpoint of the line connecting the points
-        midpoint = (coordinates[0] + coordinates [1]) / 2;
+        int midpoint1 = ((coordinates[0] + someOtherPoint [0]) / 2);
+        int midpoint2 = ((someOtherPoint[1] + coordinates[1]) / 2);
+        midpoint = midpoint1 + midpoint2;
 
         return    "Coordinates: " + coordinates[0] + ", " + coordinates[1] + "\n"
                 + "Some other point: " + someOtherPoint[0] + ", " + someOtherPoint[1] +  "\n"
