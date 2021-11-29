@@ -46,9 +46,9 @@ public class Point
             unitCircle = false;
 
         // method to determine the midpoint of the line connecting the points
-        int midpoint1 = ((coordinates[0] + someOtherPoint [0]) / 2);
-        int midpoint2 = ((someOtherPoint[1] + coordinates[1]) / 2);
-        midpoint = midpoint1 + midpoint2;
+        int midpointx = ((coordinates[0] + someOtherPoint [0]) / 2);
+        int midpointy = ((someOtherPoint[1] + coordinates[1]) / 2);
+        midpoint = midpointx & midpointy;
 
         return    "Coordinates: " + coordinates[0] + ", " + coordinates[1] + "\n"
                 + "Some other point: " + someOtherPoint[0] + ", " + someOtherPoint[1] +  "\n"
@@ -56,6 +56,6 @@ public class Point
                 + "Same coordinates with some other point: " + sameCoordinates + "\n"
                 + "Distance from another point: " + distanceFromAnotherPoint + "\n"
                 + "Is the point in the unit circle: " + unitCircle + "\n"
-                + "The midpoint of the line: " + midpoint;
+                + "The midpoint of the line: " + midpointx + ", " + midpointy;
     }
 }
